@@ -20,15 +20,15 @@ public class playercontroller : MonoBehaviour
     }
 
     // Update is called once per frame
-    //frame odaklı(görüntü yenileme)
-    //her bir frameiçin bir kez çalış fps
+    //frame odaklÃ½(gÃ¶rÃ¼ntÃ¼ yenileme)
+    //her bir frameiÃ§in bir kez Ã§alÃ½Ã¾ fps
     void Update()
     {
         HorizontalMove();
     }
 
-    //zaman odaklı çalış 50/sn
-    //fizik hesabı
+    //zaman odaklÃ½ Ã§alÃ½Ã¾ 50/sn
+    //fizik hesabÃ½
     void FixedUpdate()
     {
 
@@ -40,12 +40,12 @@ public class playercontroller : MonoBehaviour
 
         if (playerRB.velocity.x < 0 && facingRight)
         {
-            //yüzünü çevir
+            //yÃ¼zÃ¼nÃ¼ Ã§evir
             FlipFace();
         }
         else if (playerRB.velocity.x > 0 && facingRight)
         {
-            //yüzünü çevir
+            //yÃ¼zÃ¼nÃ¼ Ã§evir
             FlipFace();
         }
     }
